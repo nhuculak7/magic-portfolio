@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Nick",
+  lastName: "Huculak",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Full Stack Web Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "nick.huculak@pm.me",
+  location: "Canada", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Polish"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/nhuculak7/",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/nick-huculak/",
   },
   {
     name: "Email",
@@ -70,9 +65,9 @@ const home = {
 };
 
 const about = {
-  path: "/about",
+  path: "/",
   label: "About",
-  title: `About – ${person.name}`,
+  title: `${person.name}'s Portfolio`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -82,7 +77,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -90,9 +85,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Driven Full Stack Web Developer who thrives on refining code and uncovering novel approaches to
+		familiar tasks. Excels in problem-solving and infusing creativity into project execution.
       </>
     ),
   },
@@ -101,58 +95,48 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Super Channel",
+        timeframe: "2019 - 2024",
+        role: "Full Stack Web Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Contributed to the development and deployment of new website features aligned with organizational goals, including assisting with the Drupal 7 to 10 migration using Bootstrap.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Improved content workflows by implementing CMS solutions tailored to internal needs.
+          </>,
+		  <>
+            Used Git for version control and collaboration, while continuously optimizing performance and code quality.
+          </>,
+		  <>
+            Collaborated across teams, conducted thorough testing, and maintained clear documentation to ensure quality and consistency.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
+    ],
+  },
+  learning: {
+    display: true, // set to false to hide this section
+    title: "Online Learning",
+    platforms: [
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
+        name: "Boot.dev",
+        description: <>
+			Completed Python course – Backend-focused online platform.
+		</>,
+		profileLink: 'https://www.boot.dev/u/nhuculak7',
       },
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Northern Alberta Institute of Technology",
+        description: <>Digital Media and IT Diploma (Web Design & Development)</>,
       },
     ],
   },
@@ -161,36 +145,24 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Web Development",
+        description: <>HTML5, JavaScript, jQuery</>,
+      },
+	  {
+        title: "Styling / UI Frameworks",
+        description: <>CSS3, Bootstrap, SASS</>,
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Back-End / Database",
+        description: <>PHP, MySQL, Python</>,
+      },
+	  {
+        title: "CMS / Platforms",
+        description: <>Drupal, GitHub</>,
+      },
+	  {
+        title: "Analytics / Tracking",
+        description: <>Google Analytics, Google Tag Manager</>,
       },
     ],
   },
