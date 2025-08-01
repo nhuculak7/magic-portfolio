@@ -131,6 +131,16 @@ const about = {
       },
     ],
   },
+  studies: {
+    display: true, // set to false to hide this section
+    title: "Education",
+    institutions: [
+      {
+        name: "Northern Alberta Institute of Technology",
+        description: <>Completed a Diploma in Digital Media and IT, specializing in the Web Design & Development stream.</>,
+      },
+    ],
+  },
   learning: {
     display: true, // set to false to hide this section
     title: "Online Learning",
@@ -141,16 +151,6 @@ const about = {
           Completed Python course – Backend-focused online platform.
         </>,
         profileLink: 'https://www.boot.dev/u/nhuculak7',
-      },
-    ],
-  },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Education",
-    institutions: [
-      {
-        name: "Northern Alberta Institute of Technology",
-        description: <>Digital Media and IT Diploma (Web Design & Development)</>,
       },
     ],
   },
