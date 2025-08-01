@@ -16,15 +16,17 @@
 }
 
 .cta {
-    background-color: var(--accent-background-strong);
-    border: 1px solid var(--brand-alpha-strong);
+    --idle-color: var(--brand-alpha-weak);
+
+    background-color: var(--idle-color);
+    border-color: var(--idle-color);
 
     span {
         color: var(--brand-on-background-medium);
     }
 
     &:hover {
-        --hover-color: var(--brand-alpha-weak);
+        --hover-color: var(--brand-alpha-strong);
 
         background-color: var(--hover-color);
         border-color: var(--hover-color);
