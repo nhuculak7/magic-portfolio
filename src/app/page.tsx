@@ -250,27 +250,6 @@ export default function Home() {
             </>
           )}
 
-          {about.learning.display && (
-            <>
-              <Heading as="h2" id={about.learning.title} variant="display-strong-s" marginBottom="m">
-                {about.learning.title}
-              </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
-                {about.learning.platforms.map((platform, index) => (
-                  <Column className="platform" key={`${platform.name}-${index}`} fillWidth gap="4">
-                    <Text id={platform.name} variant="heading-strong-l">
-                      {platform.name}
-                    </Text>
-
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {platform.description}
-                    </Text>
-                  </Column>
-                ))}
-              </Column>
-            </>
-          )}
-		  
           {about.studies.display && (
             <>
               <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
@@ -290,6 +269,27 @@ export default function Home() {
               </Column>
             </>
           )}
+
+            {about.learning.display && (
+                <>
+                    <Heading as="h2" id={about.learning.title} variant="display-strong-s" marginBottom="m">
+                        {about.learning.title}
+                    </Heading>
+                    <Column fillWidth gap="l" marginBottom="40">
+                        {about.learning.platforms.map((platform, index) => (
+                            <Column className="platform" key={`${platform.name}-${index}`} fillWidth gap="4">
+                                <Text id={platform.name} variant="heading-strong-l">
+                                    {platform.name}
+                                </Text>
+
+                                <Text variant="heading-default-xs" onBackground="neutral-weak">
+                                    {platform.description}
+                                </Text>
+                            </Column>
+                        ))}
+                    </Column>
+                </>
+            )}
 
           {about.technical.display && (
             <>
