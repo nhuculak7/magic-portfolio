@@ -9,7 +9,7 @@ const person = {
   role: "Full Stack Web Developer",
   avatar: "/images/avatar.jpg",
   email: "nick.huculak@pm.me",
-  location: "Edmonton/Canada", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "America/Edmonton", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Polish"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -78,16 +78,29 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/nhuculak7/30min",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
-      <>
-        Driven Full Stack Web Developer who thrives on refining code and uncovering novel approaches to
-		familiar tasks. Excels in problem-solving and infusing creativity into project execution.
-      </>
+        <p>
+          👋 Hiya! I'm Nick, a passionate Web Developer. 💻
+          <br></br>
+          <br></br>
+          I have a knack for bridging the gap between non-technical needs and technical solutions, turning "wish lists"
+          into functional web solutions.
+          <br></br>
+          <br></br>
+          Whether it's creating new web pages, integrating features, or fine-tuning what's already there, I make it my
+          mission to understanding the needs of non-technical stakeholders and bring their ideas to life through code
+          refinement and innovative problem-solving.
+          <br></br>
+          <br></br>
+          I thrive on continuous learning and enjoy revisiting projects with new skills to find fresh solutions. With
+          expertise in HTML, CSS, PHP, JavaScript, and more, I'm equipped to contribute creatively and technically to
+          any project.
+        </p>
     ),
   },
   work: {
@@ -100,20 +113,21 @@ const about = {
         role: "Full Stack Web Developer",
         achievements: [
           <>
-            Contributed to the development and deployment of new website features aligned with organizational goals, including assisting with the Drupal 7 to 10 migration using Bootstrap.
+            Contributed to the development and deployment of new website features aligned with organizational goals,
+            including assisting with the Drupal 7 to 10 migration using Bootstrap.
           </>,
           <>
             Improved content workflows by implementing CMS solutions tailored to internal needs.
           </>,
-		  <>
+          <>
             Used Git for version control and collaboration, while continuously optimizing performance and code quality.
           </>,
-		  <>
-            Collaborated across teams, conducted thorough testing, and maintained clear documentation to ensure quality and consistency.
+          <>
+            Collaborated across teams, conducted thorough testing, and maintained clear documentation to ensure quality
+            and consistency.
           </>,
         ],
-        images: [
-        ],
+        images: [],
       },
     ],
   },
@@ -124,9 +138,9 @@ const about = {
       {
         name: "Boot.dev",
         description: <>
-			Completed Python course – Backend-focused online platform.
-		</>,
-		profileLink: 'https://www.boot.dev/u/nhuculak7',
+          Completed Python course – Backend-focused online platform.
+        </>,
+        profileLink: 'https://www.boot.dev/u/nhuculak7',
       },
     ],
   },
@@ -148,7 +162,7 @@ const about = {
         title: "Web Development",
         description: <>HTML5, JavaScript, jQuery</>,
       },
-	  {
+      {
         title: "Styling / UI Frameworks",
         description: <>CSS3, Bootstrap, SASS</>,
       },
@@ -156,11 +170,11 @@ const about = {
         title: "Back-End / Database",
         description: <>PHP, MySQL, Python</>,
       },
-	  {
+      {
         title: "CMS / Platforms",
         description: <>Drupal, GitHub</>,
       },
-	  {
+      {
         title: "Analytics / Tracking",
         description: <>Google Analytics, Google Tag Manager</>,
       },
@@ -237,4 +251,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export {person, social, newsletter, home, about, blog, work, gallery};

@@ -8,10 +8,27 @@
     }
 }
 
+
 .avatar {
     position: sticky;
     height: fit-content;
     top: var(--static-space-64);
+}
+
+.cta {
+    background-color: var(--accent-background-strong);
+    border: 1px solid var(--brand-alpha-strong);
+
+    span {
+        color: var(--brand-on-background-medium);
+    }
+
+    &:hover {
+        --hover-color: var(--brand-alpha-weak);
+
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+    }
 }
 
 @media (max-width: breakpoints.$s) {
