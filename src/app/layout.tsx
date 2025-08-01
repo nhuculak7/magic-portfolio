@@ -36,11 +36,11 @@ export default async function RootLayout({
         fonts.code.variable,
       )}
     >
-      <head>
-        <script
-          id="theme-init"
-          dangerouslySetInnerHTML={{
-            __html: `
+        <head>
+            <script
+                id="theme-init"
+                dangerouslySetInnerHTML={{
+                    __html: `
               (function() {
                 try {
                   const root = document.documentElement;
@@ -48,17 +48,17 @@ export default async function RootLayout({
                   
                   // Set defaults from config
                   const config = ${JSON.stringify({
-                    brand: style.brand,
-                    accent: style.accent,
-                    neutral: style.neutral,
-                    solid: style.solid,
-                    'solid-style': style.solidStyle,
-                    border: style.border,
-                    surface: style.surface,
-                    transition: style.transition,
-                    scaling: style.scaling,
-                    'viz-style': dataStyle.variant,
-                  })};
+                        brand: style.brand,
+                        accent: style.accent,
+                        neutral: style.neutral,
+                        solid: style.solid,
+                        'solid-style': style.solidStyle,
+                        border: style.border,
+                        surface: style.surface,
+                        transition: style.transition,
+                        scaling: style.scaling,
+                        'viz-style': dataStyle.variant,
+                    })};
                   
                   // Apply default values
                   Object.entries(config).forEach(([key, value]) => {
@@ -92,16 +92,17 @@ export default async function RootLayout({
                 }
               })();
             `,
-          }}
-        />
-      </head>
-      <Providers>
-        <Column as="body" background="page" fillWidth style={{minHeight: "100vh"}} margin="0" padding="0" horizontal="center">
-          <Background
-            position="fixed"
-            mask={{
-              x: effects.mask.x,
-              y: effects.mask.y,
+                }}
+            />
+        </head>
+        <Providers>
+            <Column as="body" background="page" fillWidth style={{minHeight: "100vh"}} margin="0" padding="0"
+                    horizontal="center">
+                <Background
+                    position="fixed"
+                    mask={{
+                        x: effects.mask.x,
+                        y: effects.mask.y,
               radius: effects.mask.radius,
               cursor: effects.mask.cursor,
             }}
