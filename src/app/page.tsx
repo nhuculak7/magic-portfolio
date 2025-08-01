@@ -293,7 +293,7 @@ export default function Home() {
 
           {about.technical.display && (
             <>
-              <Heading as="h2" id={about.technical.title.replace(/\s+/g, "")} variant="display-strong-s" marginBottom="40">
+              <Heading as="h2" id={about.technical.title} variant="display-strong-s" marginBottom="m">
                 {about.technical.title}
               </Heading>
               <Grid fillWidth gap="l" columns="2" mobileColumns="1">
