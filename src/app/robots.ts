@@ -6,29 +6,28 @@ export default function robots() {
       {
         userAgent: "*",
       },
-      // Block specific AI bots
       {
         userAgent: "GPTBot",
         disallow: "/",
       },
       {
-        userAgent: "Google-Extended", // Google's AI tool
+        userAgent: "Google-Extended",
         disallow: "/",
       },
       {
-        userAgent: "Anthropic-ai", // Anthropic's crawler
+        userAgent: "Anthropic-ai",
         disallow: "/",
       },
       {
-        userAgent: "CCBot", // Common Crawl (used by AI companies)
+        userAgent: "CCBot",
         disallow: "/",
       },
       {
-        userAgent: "FacebookBot", // Facebook's scraper (sometimes used for LLM training)
+        userAgent: "FacebookBot",
         disallow: "/",
       },
       {
-        userAgent: "ClaudeBot", // Claude's user-agent, if known
+        userAgent: "ClaudeBot",
         disallow: "/",
       },
     ],
