@@ -44,6 +44,7 @@ const social = [
   },
 ];
 
+
 const home = {
   path: "/",
   image: "/images/og/home.jpg",
