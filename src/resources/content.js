@@ -37,12 +37,11 @@ const social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/in/nick-huculak/",
   },
-  {
+/*  {
     name: "Email",
     icon: "email",
-    /*link: `mailto:${person.email}`,*/
-    link: "mai&#108;to&#58;&#110;ic%6B&#46;h&#117;cul&#97;&#107;&#37;40&#112;m&#46;m&#37;&#54;5",
-  },
+    link: `mailto:${person.email}`,
+  },*/
 ];
 
 const home = {
