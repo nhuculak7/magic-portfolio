@@ -23,7 +23,6 @@ const newsletter = {
     </>
   ),
 };
-
 const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
@@ -40,7 +39,8 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    /*link: `mailto:${person.email}`,*/
+    link: "mailto&#58;nick%2E&#37;68%&#55;5cu%6C&#37;6&#49;k&#64;pm&#37;&#50;Eme",
   },
 ];
 
